@@ -1,7 +1,7 @@
 # Xiamen Guangchen Intelligent - Joey Chan
 
 1. **Vibe Coding —— 从零实现一个最小可用 Agent**（`mini_agent/`，不依赖 agent 框架，由接入`Claude Code`的`Opus 4.8`实现，经过 OpenAI-compatible LLM 验证）。
-2. **架构设计题解答**（5 个模块各选 1 题，见下方 [Part 2](#part-2--架构设计题解答)）。
+2. **架构设计题解答**（5 个模块各选 1 题）——📄 **独立文档：[架构设计题解答.md](架构设计题解答.md)**，同样内联在下方 [Part 2](#part-2--架构设计题解答)。
 
 > 交付物索引在文末 [提交物清单](#提交物清单)。演示录屏见 [录屏](#录屏)。AI 协作与问题解决记录见 [`docs/ai-collaboration-log.md`](docs/ai-collaboration-log.md)。
 
@@ -116,7 +116,7 @@ REPL 命令：`/session <id>`、`/sessions`、`/todos`、`/trace`、`/help`、`/
 | 代码（真实 LLM API、自研 runtime） | 本仓库 `mini_agent/` + `tests/` |
 | 运行方式 / 系统设计 / memory 召回时机与放置 | 本 README + [`mini_agent/README.md`](mini_agent/README.md) |
 | 终端操作录屏 | 见上方 [录屏](#录屏) |
-| 架构设计题解答（5 模块） | 本 README [Part 2](#part-2--架构设计题解答) |
+| **架构设计题解答（5 模块）** | 📄 独立文档 [`架构设计题解答.md`](架构设计题解答.md)；亦内联于 [Part 2](#part-2--架构设计题解答) |
 | AI Prompt 与问题解决记录 | [`docs/ai-collaboration-log.md`](docs/ai-collaboration-log.md) |
 | 长期记忆系统（自研，vendored） | `AutoMemory/`（独立仓库 <https://github.com/Airmongsity/AutoMemory>） |
 
@@ -124,7 +124,8 @@ REPL 命令：`/session <id>`、`/sessions`、`/todos`、`/trace`、`/help`、`/
 
 ```
 .
-├── README.md                     # 本文件：提交总入口 + 架构设计题解答
+├── README.md                     # 本文件：提交总入口 + 架构设计题解答（Part 2）
+├── 架构设计题解答.md              # 架构设计题 5 模块解答（独立文档）
 ├── requirements.txt
 ├── mini_agent/                   # Part 1：从零实现的 Agent（自研 runtime）
 │   ├── runtime.py  llm_client.py  parser.py  session.py
