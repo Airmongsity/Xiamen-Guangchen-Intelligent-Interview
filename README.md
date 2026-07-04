@@ -61,7 +61,7 @@ REPL 命令：`/session <id>`、`/sessions`、`/todos`、`/trace`、`/help`、`/
 
 ## Part 2 · 架构设计题解答
 
-### 模块一 · Context/Performance —— Q2：200 轮 context 快爆，如何压缩且保持流畅
+### 模块一 · Context/Performance —— Q2：一个 session 连续聊了 200 轮，context 快爆了。你会怎么做压缩？如何确保压缩后的对话仍然流畅？
 
 **分层摘要**：近N轮保留原文，溢出旧轮由LLM摘要成滚动Summary，稳定事实抽取进长期记忆，需要用到时再召回。摘要保留数字、日期、人员等信息，只在user轮边界切割，避免切断assistant的`tool_calls`。
 
@@ -69,7 +69,7 @@ REPL 命令：`/session <id>`、`/sessions`、`/todos`、`/trace`、`/help`、`/
 
 **我的选择**：滑窗 + 递归摘要（保 open threads/实体）为主，逐字敏感项挂原文指针，长期事实外置到 memory；复杂分层压缩非必要不做。
 
-### 模块二 · Memory —— Q1：熟悉半个月后用户重复问旧问题，如何召回更合理
+### 模块二 · Memory —— Q1：和聊天 Agent 熟悉半个月后，用户问了一个以前问过的问题。Agent 如何做 memory 召回更合理？
 
 **方案（即 AutoMemory 的召回链路）**：混合检索（向量 ∪ BM25）→ 打分（`priority=(0.2+0.8·retention)·(1+…)`，`retention=exp(-Δt/S_eff)`）→ 单跳联想扩散 → rerank → top-k。
 
@@ -77,7 +77,7 @@ REPL 命令：`/session <id>`、`/sessions`、`/todos`、`/trace`、`/help`、`/
 
 **我的选择**：混合检索 + 遗忘曲线 + 检索即复习 + 效用反馈；重复问场景靠“复习 + 正反馈”自然收敛。
 
-### 模块三 · Task —— Q2：每天早上 9 点根据昨天聊天做复盘总结
+### 模块三 · Task —— Q2：用户给 Agent 下达任务：每天早上 9 点根据昨天聊天情况做复盘总结。你会怎么设计？
 
 **方案（调度层 + 复用记忆构件）**：① cron/scheduler 按用户时区每天 09:00 触发；② 拉取该用户昨日会话；③ 走 AutoMemory `consolidate()` 把昨日内容抽成 **summary 记忆**，再 LLM 生成结构化复盘（做了什么/进展/未决/今日建议）；④ 复盘**写回长期记忆**（供后续召回）并推送。
 
@@ -85,7 +85,7 @@ REPL 命令：`/session <id>`、`/sessions`、`/todos`、`/trace`、`/help`、`/
 
 **我的选择**：独立 scheduler 触发，归纳复用 AutoMemory，结果回灌记忆闭环；解决幂等/时区/空数据等鲁棒性问题。
 
-### 模块四 · Tool / Session Runtime —— Q2：session busy 时又来新消息 / 异步事件
+### 模块四 · Tool / Session Runtime —— Q2：如果 session state 为 busy，此时用户又发来新消息，或者异步工具完成事件也到达，runtime 应该如何处理？
 
 **方案（单会话串行化 + 事件队列 + 状态机）**：每个 session 一台状态机 `idle → busy → waiting_async`，**同 session 内串行**避免历史竞态；一个 per-session 事件队列消费 `user_msg` / `async_tool_done` / `cancel`；busy 时新事件**入队**按序处理；异步完成事件到达时把结果**回灌 context** 唤醒对应轮次继续 loop（对应异步工具的 “提交即返 task_id + 完成通知”）。**默认排队**（保证一致性）；**显式打断才抢占**（用户说“停/改”→ cancel 当前轮、清理半成品）；也可**合并**（把补充信息并入下一次 LLM 输入）。
 
@@ -93,7 +93,7 @@ REPL 命令：`/session <id>`、`/sessions`、`/todos`、`/trace`、`/help`、`/
 
 **我的选择**：per-session 串行 + 队列 + 状态机；默认排队、显式抢占、可选合并；异步结果经 task_id 回灌唤醒。
 
-### 模块五 · Agent Runtime 架构对比 —— Q1：Claude Code 的工具输出 vs 国内 OpenAI-compatible function calling
+### 模块五 · Agent Runtime 架构对比 —— Q1：Claude Code 的工具输出方式和国内 GLM / 豆包等 OpenAI-compatible function calling 有什么不同？他们各自这样设计的优缺点是什么？
 
 **机制本质区别**
 - **OpenAI-compatible（GLM/豆包/DeepSeek 等）**：工具结果是一条 `tool` 角色消息、`content` 是**纯字符串**；`tool_calls.function.arguments` 是**字符串化 JSON**。见 `mini_agent/runtime.py`（回灌 `{"role":"tool","tool_call_id":…,"content":json.dumps(payload)}`）与 `parser.py::salvage_json`。
