@@ -55,7 +55,7 @@ REPL 命令：`/session <id>`、`/sessions`、`/todos`、`/trace`、`/help`、`/
 
 ### 录屏
 
-> 📹 演示录屏：[**▶ record.mp4**](record.mp4)（点击在 GitHub 播放）。演示 Agent 核心流程：多步 loop、双 session 对话隔离、带工具的追问召回，以及用户级 todo / 长期记忆跨窗口共享。
+演示录屏：[record.mp4](record.mp4)。演示 Agent 核心流程：多步 loop、双 session 对话隔离、带工具的追问召回，以及用户级 todo / 长期记忆跨窗口共享。
 
 ---
 
