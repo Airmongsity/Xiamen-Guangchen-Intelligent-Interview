@@ -1,0 +1,542 @@
+{
+  "001be529": {
+    "question_id": "001be529",
+    "question_type": "single-session-user",
+    "question": "How long did I wait for the decision on my asylum application?",
+    "answer": "over a year",
+    "response": "Based on the memory from 2023-05-28, your asylum application was approved after over a year of waiting.",
+    "n_retrieved": 20,
+    "search_time": 3.0948963165283203
+  },
+  "00ca467f": {
+    "question_id": "00ca467f",
+    "question_type": "multi-session",
+    "question": "How many doctor's appointments did I go to in March?",
+    "answer": 2,
+    "response": "Based on the memories, UserA had appointments with Dr. Smith on March 3, 2023, and with Dr. Thompson on March 20, 2023. That is two appointments.",
+    "n_retrieved": 20,
+    "search_time": 3.0813965797424316
+  },
+  "07b6f563": {
+    "question_id": "07b6f563",
+    "question_type": "single-session-preference",
+    "question": "Can you suggest some useful accessories for my phone?",
+    "answer": "The user would prefer suggestions of accessories that are compatible with an iPhone 13 Pro, such as high-quality screen protectors, durable cases, portable power banks, or phone wallet cases. They may not prefer suggestions of accessories that are not compatible with Apple products or do not enhance the functionality or protection of their phone.",
+    "response": "Based on the retrieved memories, I can suggest the following accessories for your phone:\n\n- **Wallet case brands for iPhone 13 Pro:** Nomad, Fossil, Bellroy, Incipio, Speck, Case-Mate, Tech21, UAG, Mophie, Spigen.\n- **Screen protector brands for iPhone 13 Pro:** Zagg, TechArmor, Spigen, BodyGuardz, Belkin, Anker, OtterBox, Mophie, UAG, Skinomi.",
+    "n_retrieved": 20,
+    "search_time": 3.12749981880188
+  },
+  "08f4fc43": {
+    "question_id": "08f4fc43",
+    "question_type": "temporal-reasoning",
+    "question": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+    "answer": "30 days. 31 days (including the last day) is also acceptable.",
+    "response": "January 2, 2023 to February 1, 2023 is 30 days.",
+    "n_retrieved": 20,
+    "search_time": 3.17175030708313
+  },
+  "0bc8ad93": {
+    "question_id": "0bc8ad93",
+    "question_type": "temporal-reasoning",
+    "question": "I mentioned visiting a museum two months ago. Did I visit with a friend or not?",
+    "answer": "No, you did not visit with a friend.",
+    "response": "Based on the memories, you visited the Natural History Museum with your dad on 2023/02/17. Two months before 2023/03/11 would be around January 2023, but the only museum visit in that timeframe is the one with your dad. However, the memory from 2022-10-22 mentions visiting the Science Museum with a friend. Since the question asks about \"two months ago\" (January 2023), the relevant memory is the Natural History Museum visit with your dad, not a friend.\n\nI don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.6414697170257568
+  },
+  "0f05491a": {
+    "question_id": "0f05491a",
+    "question_type": "knowledge-update",
+    "question": "How many stars do I need to reach the gold level on my Starbucks Rewards app?",
+    "answer": 120,
+    "response": "120 stars.",
+    "n_retrieved": 20,
+    "search_time": 1.6826503276824951
+  },
+  "15745da0_abs": {
+    "question_id": "15745da0_abs",
+    "question_type": "single-session-user",
+    "question": "How long have I been collecting vintage films?",
+    "answer": "You did not mention this information. You mentioned collecting vintage cameras but not vintage films.",
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.549351453781128
+  },
+  "26bdc477": {
+    "question_id": "26bdc477",
+    "question_type": "knowledge-update",
+    "question": "How many trips have I taken my Canon EOS 80D camera on?",
+    "answer": "five",
+    "response": "Based on the retrieved memories, UserA has used the Canon EOS 80D on five trips.",
+    "n_retrieved": 20,
+    "search_time": 1.3059563636779785
+  },
+  "2ebe6c90": {
+    "question_id": "2ebe6c90",
+    "question_type": "temporal-reasoning",
+    "question": "How many days did it take me to finish 'The Nightingale' by Kristin Hannah?",
+    "answer": "21 days. 22 days (including the last day) is also acceptable.",
+    "response": "21 days (from 2023/01/10 to 2023/01/31).",
+    "n_retrieved": 20,
+    "search_time": 2.021050214767456
+  },
+  "2ebe6c92": {
+    "question_id": "2ebe6c92",
+    "question_type": "temporal-reasoning",
+    "question": "Which book did I finish a week ago?",
+    "answer": "'The Nightingale' by Kristin Hannah",
+    "response": "I don't know / no information available.",
+    "n_retrieved": 20,
+    "search_time": 1.9092092514038086
+  },
+  "36580ce8": {
+    "question_id": "36580ce8",
+    "question_type": "single-session-user",
+    "question": "What health issue did I initially think was just a cold?",
+    "answer": "bronchitis",
+    "response": "Bronchitis.",
+    "n_retrieved": 20,
+    "search_time": 2.295189142227173
+  },
+  "4388e9dd": {
+    "question_id": "4388e9dd",
+    "question_type": "single-session-assistant",
+    "question": "I was going through our previous chat and I was wondering, what was Andy wearing in the script you wrote for the comedy movie scene?",
+    "answer": "Andy was wearing an untidy, stained white shirt.",
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.8451290130615234
+  },
+  "46a3abf7": {
+    "question_id": "46a3abf7",
+    "question_type": "multi-session",
+    "question": "How many tanks do I currently have, including the one I set up for my friend's kid?",
+    "answer": 3,
+    "response": "Based on the memories, you have three tanks: a 1-gallon tank set up for a friend's kid, a 5-gallon tank with a betta named Finley, and a 20-gallon community tank named 'Amazonia'.",
+    "n_retrieved": 20,
+    "search_time": 1.5703246593475342
+  },
+  "4dfccbf8": {
+    "question_id": "4dfccbf8",
+    "question_type": "temporal-reasoning",
+    "question": "What did I do with Rachel on the Wednesday two months ago?",
+    "answer": "I started taking ukulele lessons with Rachel.",
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.7503294944763184
+  },
+  "50635ada": {
+    "question_id": "50635ada",
+    "question_type": "knowledge-update",
+    "question": "What was my previous frequent flyer status on United Airlines before I got the current status?",
+    "answer": "Premier Silver",
+    "response": "Premier Gold status.",
+    "n_retrieved": 20,
+    "search_time": 2.048260450363159
+  },
+  "60d45044": {
+    "question_id": "60d45044",
+    "question_type": "single-session-user",
+    "question": "What type of rice is my favorite?",
+    "answer": "Japanese short-grain rice",
+    "response": "Japanese short-grain rice.",
+    "n_retrieved": 20,
+    "search_time": 2.005385637283325
+  },
+  "66f24dbb": {
+    "question_id": "66f24dbb",
+    "question_type": "single-session-user",
+    "question": "What did I buy for my sister's birthday gift?",
+    "answer": "a yellow dress",
+    "response": "Based on the memories, you bought a yellow dress and a pair of matching earrings for your sister's birthday on 2023-05-24.",
+    "n_retrieved": 20,
+    "search_time": 1.7176148891448975
+  },
+  "6ae235be": {
+    "question_id": "6ae235be",
+    "question_type": "single-session-assistant",
+    "question": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+    "answer": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+    "response": "Based on the memory from 2023-05-28, the refining processes at the Lake Charles Refinery are: atmospheric distillation, fluid catalytic cracking, alkylation, and hydrotreating.",
+    "n_retrieved": 20,
+    "search_time": 1.7482526302337646
+  },
+  "6b7dfb22": {
+    "question_id": "6b7dfb22",
+    "question_type": "single-session-preference",
+    "question": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+    "answer": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+    "response": "Based on the retrieved memories, you are participating in a 30-day painting challenge and have been getting inspiration from social media as of 2023-05-23.",
+    "n_retrieved": 20,
+    "search_time": 1.6620421409606934
+  },
+  "75f70248": {
+    "question_id": "75f70248",
+    "question_type": "single-session-preference",
+    "question": "I've been sneezing quite a bit lately. Do you think it might be my living room?",
+    "answer": "The user would prefer responses that consider the potential impact of their cat, Luna, and her shedding on their sneezing, as well as the recent deep clean of the living room and its possible effect on stirring up dust. They might not prefer responses that fail to take into account these specific details previously mentioned, such as generic suggestions or unrelated factors.",
+    "response": "Based on the memory from [2023-05-26], UserA has a cat that sheds a lot and wants to keep the living room dust-free. Yes, your sneezing could be related to your living room due to cat dander and dust.",
+    "n_retrieved": 20,
+    "search_time": 1.7003521919250488
+  },
+  "7a87bd0c": {
+    "question_id": "7a87bd0c",
+    "question_type": "knowledge-update",
+    "question": "How long have I been sticking to my daily tidying routine?",
+    "answer": "4 weeks",
+    "response": "According to the memory from 2023-06-11, UserA has been sticking to a daily tidying routine for 4 weeks as of 2023/09/30.",
+    "n_retrieved": 20,
+    "search_time": 1.771155834197998
+  },
+  "80ec1f4f_abs": {
+    "question_id": "80ec1f4f_abs",
+    "question_type": "multi-session",
+    "question": "How many different museums or galleries did I visit in December?",
+    "answer": "0. You did not mention visitng any museum in December",
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.8004295825958252
+  },
+  "81507db6": {
+    "question_id": "81507db6",
+    "question_type": "multi-session",
+    "question": "How many graduation ceremonies have I attended in the past three months?",
+    "answer": 3,
+    "response": "Based on the memories from 2023-07-21, you attended three graduation ceremonies in the past three months: your little cousin Emma's preschool graduation (around May 2023), your best friend Rachel's master's degree graduation (a couple of weeks before 2023/07/21), and colleague Alex's leadership development program graduation (a few weeks before 2023/07/21).",
+    "n_retrieved": 20,
+    "search_time": 1.7003135681152344
+  },
+  "8464fc84": {
+    "question_id": "8464fc84",
+    "question_type": "single-session-assistant",
+    "question": "I'm planning to visit the Vatican again and I was wondering if you could remind me of the name of that famous deli near the Vatican that serves the best cured meats and cheeses?",
+    "answer": "Roscioli",
+    "response": "Based on the memories, the assistant recommended Pizzarium, La Locanda dei Girasoli, Roscioli, and Caffè Vaticano as good places to eat near the Vatican. However, none of these are specifically described as a famous deli serving the best cured meats and cheeses. Therefore, I don't know / no information available.",
+    "n_retrieved": 20,
+    "search_time": 1.7162635326385498
+  },
+  "853b0a1d": {
+    "question_id": "853b0a1d",
+    "question_type": "single-session-user",
+    "question": "How old was I when my grandma gave me the silver necklace?",
+    "answer": "18",
+    "response": "18 years old.",
+    "n_retrieved": 20,
+    "search_time": 1.6234216690063477
+  },
+  "8cf4d046": {
+    "question_id": "8cf4d046",
+    "question_type": "multi-session",
+    "question": "What is the average GPA of my undergraduate and graduate studies?",
+    "answer": "3.83",
+    "response": "Based on the memories, your undergraduate GPA is 3.86 out of 4.0, and your graduate GPA is 3.8 out of 4.0. The average of these two is (3.86 + 3.8) / 2 = 3.83.",
+    "n_retrieved": 20,
+    "search_time": 1.5417063236236572
+  },
+  "9bbe84a2": {
+    "question_id": "9bbe84a2",
+    "question_type": "knowledge-update",
+    "question": "What was my previous goal for my Apex Legends level before I updated my goal?",
+    "answer": "level 100",
+    "response": "Based on the memories, UserA's previous goal was to reach level 150 in Apex Legends.",
+    "n_retrieved": 20,
+    "search_time": 1.8156123161315918
+  },
+  "a06e4cfe": {
+    "question_id": "a06e4cfe",
+    "question_type": "single-session-user",
+    "question": "What is my preferred gin-to-vermouth ratio for a classic gin martini?",
+    "answer": "3:1",
+    "response": "3:1 (as of 2023-05-22).",
+    "n_retrieved": 20,
+    "search_time": 1.8801393508911133
+  },
+  "a08a253f": {
+    "question_id": "a08a253f",
+    "question_type": "multi-session",
+    "question": "How many days a week do I attend fitness classes?",
+    "answer": "4 days.",
+    "response": "Based on the memories, UserA attends Zumba classes on Tuesdays and Thursdays, a weightlifting class on Saturdays, and a yoga class on Wednesdays. That is 4 days a week.",
+    "n_retrieved": 20,
+    "search_time": 1.6304373741149902
+  },
+  "a346bb18": {
+    "question_id": "a346bb18",
+    "question_type": "multi-session",
+    "question": "How many minutes did I exceed my target time by in the marathon?",
+    "answer": "12",
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.7380762100219727
+  },
+  "a40e080f": {
+    "question_id": "a40e080f",
+    "question_type": "single-session-assistant",
+    "question": "I was going through our previous conversation and I was wondering if you could remind me of the two companies you mentioned that prioritize employee safety and well-being like Triumvirate?",
+    "answer": "Patagonia and Southwest Airlines.",
+    "response": "Patagonia and Southwest Airlines.",
+    "n_retrieved": 20,
+    "search_time": 1.8715088367462158
+  },
+  "ad7109d1": {
+    "question_id": "ad7109d1",
+    "question_type": "single-session-user",
+    "question": "What speed is my new internet plan?",
+    "answer": "500 Mbps",
+    "response": "Based on the memories, UserA upgraded to 500 Mbps internet about three weeks before 2023/05/24, but on 2023/05/30 UserA has a 1 Gbps internet connection. Since the most recent memory is from 2023/05/30, the answer is 1 Gbps.",
+    "n_retrieved": 20,
+    "search_time": 1.8725099563598633
+  },
+  "affe2881": {
+    "question_id": "affe2881",
+    "question_type": "knowledge-update",
+    "question": "How many different species of birds have I seen in my local park?",
+    "answer": "32",
+    "response": "32",
+    "n_retrieved": 20,
+    "search_time": 1.8474884033203125
+  },
+  "b0479f84": {
+    "question_id": "b0479f84",
+    "question_type": "single-session-preference",
+    "question": "I've got some free time tonight, any documentary recommendations?",
+    "answer": "The user would prefer documentary recommendations that are similar in style and theme to 'Our Planet', 'Free Solo', and 'Tiger King', which they have previously enjoyed. They might not prefer recommendations of documentaries that are vastly different in tone or subject matter from these titles. The preferred response utilizes the user's previously mentioned viewing history to suggest documentaries that cater to their tastes.",
+    "response": "Based on the memories, on 2023-05-28 the assistant recommended these nature and wildlife documentaries on Netflix: 'Planet Earth', 'Blue Planet', 'March of the Penguins', 'Dynasties', and 'Chasing Coral'.",
+    "n_retrieved": 20,
+    "search_time": 1.6588053703308105
+  },
+  "b29f3365": {
+    "question_id": "b29f3365",
+    "question_type": "temporal-reasoning",
+    "question": "How long had I been taking guitar lessons when I bought the new guitar amp?",
+    "answer": "Four weeks",
+    "response": "Based on the memories from 2023-05-25, you bought the new guitar amp two weeks ago (around 2023-05-11) and had been taking weekly guitar lessons with Alex for six weeks as of 2023-05-25. Therefore, when you bought the amp, you had been taking lessons for four weeks.",
+    "n_retrieved": 20,
+    "search_time": 1.727776050567627
+  },
+  "b5ef892d": {
+    "question_id": "b5ef892d",
+    "question_type": "multi-session",
+    "question": "How many days did I spend on camping trips in the United States this year?",
+    "answer": "8 days.",
+    "response": "Based on the memories, UserA spent 5 days camping in Yellowstone in March 2023 and 3 days camping in Big Sur in early April 2023. That totals 8 days.",
+    "n_retrieved": 20,
+    "search_time": 1.7892446517944336
+  },
+  "b9cfe692": {
+    "question_id": "b9cfe692",
+    "question_type": "temporal-reasoning",
+    "question": "How long did I take to finish 'The Seven Husbands of Evelyn Hugo' and 'The Nightingale' combined?",
+    "answer": "5.5 weeks",
+    "response": "Based on the memories from 2023-05-24, UserA finished 'The Seven Husbands of Evelyn Hugo' in two and a half weeks and 'The Nightingale' in three weeks. Combined, that is five and a half weeks.",
+    "n_retrieved": 20,
+    "search_time": 1.5958406925201416
+  },
+  "ba358f49_abs": {
+    "question_id": "ba358f49_abs",
+    "question_type": "multi-session",
+    "question": "How old will Rachel be when I get married?",
+    "answer": "The information provided is not enough. You did not mention how old Rachel is right now, nor when will you get married.",
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.5568675994873047
+  },
+  "bbf86515": {
+    "question_id": "bbf86515",
+    "question_type": "temporal-reasoning",
+    "question": "How many days before the 'Rack Fest' did I participate in the 'Turbocharged Tuesdays' event?",
+    "answer": "4 days.",
+    "response": "4 days.",
+    "n_retrieved": 20,
+    "search_time": 1.8507122993469238
+  },
+  "bf659f65": {
+    "question_id": "bf659f65",
+    "question_type": "multi-session",
+    "question": "How many music albums or EPs have I purchased or downloaded?",
+    "answer": 3,
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.7045977115631104
+  },
+  "cc06de0d": {
+    "question_id": "cc06de0d",
+    "question_type": "multi-session",
+    "question": "For my daily commute, how much more expensive was the taxi ride compared to the train fare?",
+    "answer": "$6",
+    "response": "$6.00.",
+    "n_retrieved": 20,
+    "search_time": 1.622450590133667
+  },
+  "cc5ded98": {
+    "question_id": "cc5ded98",
+    "question_type": "knowledge-update",
+    "question": "How much time do I dedicate to coding exercises each day?",
+    "answer": "about two hours",
+    "response": "Based on the memory from 2023-05-20, you dedicate about two hours each day to coding exercises.",
+    "n_retrieved": 20,
+    "search_time": 1.6030216217041016
+  },
+  "ce6d2d27": {
+    "question_id": "ce6d2d27",
+    "question_type": "knowledge-update",
+    "question": "What day of the week do I take a cocktail-making class?",
+    "answer": "Friday",
+    "response": "Friday.",
+    "n_retrieved": 20,
+    "search_time": 1.6858277320861816
+  },
+  "ceb54acb": {
+    "question_id": "ceb54acb",
+    "question_type": "single-session-assistant",
+    "question": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+    "answer": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+    "response": "Based on the retrieved memories, the other four options were: 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+    "n_retrieved": 20,
+    "search_time": 1.807603359222412
+  },
+  "e8a79c70": {
+    "question_id": "e8a79c70",
+    "question_type": "single-session-assistant",
+    "question": "I was going through our previous conversation about making a classic French omelette, and I wanted to confirm - how many eggs did you say we need for the recipe?",
+    "answer": "2-3 eggs",
+    "response": "2-3 eggs.",
+    "n_retrieved": 20,
+    "search_time": 1.6124980449676514
+  },
+  "edced276_abs": {
+    "question_id": "edced276_abs",
+    "question_type": "multi-session",
+    "question": "How many days did I spend in total traveling in Hawaii and in Seattle?",
+    "answer": "The information provided is not enough. You mentioned traveling for 10 days in Hawaii but did not mention abything about the trip to Seattle.",
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.623854637145996
+  },
+  "f0853d11": {
+    "question_id": "f0853d11",
+    "question_type": "temporal-reasoning",
+    "question": "How many days had passed between the 'Walk for Hunger' event and the 'Coastal Cleanup' event?",
+    "answer": "14 days. 8 days (including the last day) is also acceptable.",
+    "response": "7 days.",
+    "n_retrieved": 20,
+    "search_time": 1.687284231185913
+  },
+  "f0e564bc": {
+    "question_id": "f0e564bc",
+    "question_type": "multi-session",
+    "question": "What is the total amount I spent on the designer handbag and high-end skincare products?",
+    "answer": "$1,300",
+    "response": "I don't know / no information available",
+    "n_retrieved": 20,
+    "search_time": 1.8336105346679688
+  },
+  "f523d9fe": {
+    "question_id": "f523d9fe",
+    "question_type": "single-session-assistant",
+    "question": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+    "answer": "Doc Martin",
+    "response": "Doc Martin",
+    "n_retrieved": 20,
+    "search_time": 1.6379637718200684
+  },
+  "f685340e": {
+    "question_id": "f685340e",
+    "question_type": "knowledge-update",
+    "question": "How often do I play tennis with my friends at the local park previously? How often do I play now?",
+    "answer": "Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday).",
+    "response": "Based on the memories, you previously played tennis with friends at the local park every other Sunday, including on 2023/07/30. There is no information about how often you play now.",
+    "n_retrieved": 20,
+    "search_time": 2.037363052368164
+  },
+  "gpt4_1e4a8aeb": {
+    "question_id": "gpt4_1e4a8aeb",
+    "question_type": "temporal-reasoning",
+    "question": "How many days passed between the day I attended the gardening workshop and the day I planted the tomato saplings?",
+    "answer": "6 days. 7 days (including the last day) is also acceptable.",
+    "response": "6 days.",
+    "n_retrieved": 20,
+    "search_time": 1.6564195156097412
+  },
+  "gpt4_2f56ae70": {
+    "question_id": "gpt4_2f56ae70",
+    "question_type": "temporal-reasoning",
+    "question": "Which streaming service did I start using most recently?",
+    "answer": "Disney+",
+    "response": "Based on the memories, UserA started using Apple TV+ most recently, having just finished 'For All Mankind' on that service.",
+    "n_retrieved": 20,
+    "search_time": 1.7569868564605713
+  },
+  "gpt4_4929293a": {
+    "question_id": "gpt4_4929293a",
+    "question_type": "temporal-reasoning",
+    "question": "Which event happened first, my cousin's wedding or Michael's engagement party?",
+    "answer": "Michael's engagement party",
+    "response": "Michael's engagement party (2023/05/06) happened first, before your cousin's wedding (2023/06/15).",
+    "n_retrieved": 20,
+    "search_time": 1.7129442691802979
+  },
+  "gpt4_59149c78": {
+    "question_id": "gpt4_59149c78",
+    "question_type": "temporal-reasoning",
+    "question": "I mentioned that I participated in an art-related event two weeks ago. Where was that event held at?",
+    "answer": "The Metropolitan Museum of Art.",
+    "response": "City Art Museum",
+    "n_retrieved": 20,
+    "search_time": 1.704434871673584
+  },
+  "gpt4_68e94288": {
+    "question_id": "gpt4_68e94288",
+    "question_type": "temporal-reasoning",
+    "question": "What was the social media activity I participated 5 days ago?",
+    "answer": "You participated in a social media challenge called #PlankChallenge.",
+    "response": "I don't know / no information available.",
+    "n_retrieved": 20,
+    "search_time": 1.6575531959533691
+  },
+  "gpt4_731e37d7": {
+    "question_id": "gpt4_731e37d7",
+    "question_type": "multi-session",
+    "question": "How much total money did I spend on attending workshops in the last four months?",
+    "answer": "$720",
+    "response": "$720",
+    "n_retrieved": 20,
+    "search_time": 1.6855642795562744
+  },
+  "gpt4_7fce9456": {
+    "question_id": "gpt4_7fce9456",
+    "question_type": "multi-session",
+    "question": "How many properties did I view before making an offer on the townhouse in the Brookside neighborhood?",
+    "answer": "I viewed four properties before making an offer on the townhouse in the Brookside neighborhood. The reasons I didn't make an offer on them were: the kitchen of the bungalow needed serious renovation, the property in Cedar Creek was out of my budget, the noise from the highway was a deal-breaker for the 1-bedroom condo, and my offer on the 2-bedroom condo was rejected due to a higher bid.",
+    "response": "Based on the memories, UserA viewed a 3-bedroom bungalow in Oakwood on January 22, 2023, a 1-bedroom condo on 2023/02/10, and a 2-bedroom condo on February 15, 2023 before making an offer on the townhouse on 2023/02/25. That is three properties.\n\nAnswer: 3",
+    "n_retrieved": 20,
+    "search_time": 1.6594858169555664
+  },
+  "gpt4_8e165409": {
+    "question_id": "gpt4_8e165409",
+    "question_type": "temporal-reasoning",
+    "question": "How many days passed between the day I repotted the previous spider plant and the day I gave my neighbor, Mrs. Johnson, a few cuttings from my spider plant?",
+    "answer": "14 days. 15 days (including the last day) is also acceptable.",
+    "response": "7 days.",
+    "n_retrieved": 20,
+    "search_time": 1.7033028602600098
+  },
+  "gpt4_b0863698": {
+    "question_id": "gpt4_b0863698",
+    "question_type": "temporal-reasoning",
+    "question": "How many days ago did I participate in the 5K charity run?",
+    "answer": "7 days ago. 8 days (including the last day) is also acceptable.",
+    "response": "UserA completed the 5K charity run on 2023/03/19. The question was asked on 2023/03/26, so that is 7 days ago.",
+    "n_retrieved": 20,
+    "search_time": 1.69840407371521
+  },
+  "gpt4_e05b82a6": {
+    "question_id": "gpt4_e05b82a6",
+    "question_type": "multi-session",
+    "question": "How many times did I ride rollercoasters across all the events I attended from July to October?",
+    "answer": "10 times",
+    "response": "Based on the memories, you rode rollercoasters as follows:\n\n- July 2023: Rode Mako, Kraken, and Manta at SeaWorld San Diego (3 rides).\n- September 24, 2023: Rode Space Mountain: Ghost Galaxy three times at Disneyland (3 rides).\n- October 8, 2023: Rode the Xcelerator at Knott's Berry Farm (1 ride).\n- October 15, 2023: Rode the Revenge of the Mummy three times at Universal Studios Hollywood (3 rides).\n\nTotal: 3 + 3 + 1 + 3 = 10 times.",
+    "n_retrieved": 20,
+    "search_time": 1.5689661502838135
+  }
+}

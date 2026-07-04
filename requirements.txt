@@ -1,0 +1,9 @@
+# Core agent runtime (mini_agent)
+openai>=1.30
+
+# Optional: long-term memory via the vendored AutoMemory (python -m mini_agent.cli --memory)
+numpy>=1.24
+sqlite-vec>=0.1.1
+
+# Dev / test
+pytest>=7.0

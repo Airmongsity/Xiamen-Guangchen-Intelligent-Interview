@@ -1,0 +1,37 @@
+# --- secrets: never commit any .env (root or vendored AutoMemory) ---
+.env
+**/.env
+*.key
+
+# --- third-party reference clones (NOT part of this submission) ---
+claude-code-main/
+opencode/
+
+# --- company exam paper (kept out of the public repo by choice) ---
+2026年Agent技术笔试题.md
+
+# --- AI assistant tooling / local notes (not a deliverable) ---
+CLAUDE.md
+.claude/
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# --- runtime artifacts ---
+*.db
+*.sqlite
+*.sqlite3
+mini_agent_memory.db
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

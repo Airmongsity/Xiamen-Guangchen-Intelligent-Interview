@@ -1,0 +1,61 @@
+# ── Secrets (NEVER commit) ───────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ── Python build / cache ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── Virtual environments ─────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Editor / OS ──────────────────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ── Claude Code local settings ───────────────────────────────────────────
+.claude/
+
+# ── Reference repositories (read-only third-party clones, not ours) ──────
+mem0/
+MemGPT/
+powermem/
+LongMemEval-V2/
+
+# ── Evaluation artifacts ─────────────────────────────────────────────────
+# Downloaded benchmark datasets (hundreds of MB, fetched by reproduction cmds)
+evaluation/longmemeval/data/
+evaluation/locomo/dataset/
+# SQLite stores built during ingestion (regenerable; can be very large)
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+# Keep the small final result JSONs as evidence; drop transient/empty ones
+evaluation/results/*_manifest.json
+evaluation/results/*smoke*
+evaluation/results/*.log
+# Intermediate iteration runs whose numbers were superseded (pre-fix / polluted /
+# prompt-tuning passes). The canonical clean evidence (lme3_asof_*, lme3_compete_noasof,
+# lme3_rag_k30) is committed; these are kept local only to avoid contradicting the README.
+evaluation/results/lme3_automem_k30*
+evaluation/results/lme3_clean_*
